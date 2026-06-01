@@ -188,3 +188,25 @@ footer {
   opacity: 1;
   transform: translateY(-2px);
 }
+.gear-wrap {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.gear-item {
+  padding: 0.5rem;
+  border-left: 2px solid #2a2a2a;
+  text-align: left;
+}
+
+.gear-item strong {
+  color: #fff;
+  display: block;
+  font-family: "Shantell Sans", cursive;
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
