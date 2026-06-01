@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Caramel&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  font-family: "Shantell Sans", cursive;
+  line-height: 1.6;
+  background-color: #1a1a1a;
+  color: #d1d1d1;
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+header h1 {
+  font-size: 7rem;
+  margin-bottom: 0.1rem;
+  color: #ffffff;
+  font-family: "Caramel", cursive;
+  margin-bottom: -1.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+nav {
+  margin-bottom: 2.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 0.75rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+.header-decoration img {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  height: auto;
+  opacity: 0.8;
+  border-radius: 4px;
+  image-rendering: pixelated;
+}
+
+.projects {
+  column-count: 2;
+  column-gap: 2rem;
+  width: 100%;
+}
+
+.project-card {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  background-color: #242424;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+  line-height: 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: saturate(0.8);
+}
+
+.project-title {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+#about {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+footer {
+  margin-top: 8rem;
+  padding: 2rem 0;
+  border-top: 1px solid #2a2a2a;
+  color: #555;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 3rem auto;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 80%;
+  text-align: center;
+}
+
+.lightbox-content img {
+  max-height: 70vh;
+  border-radius: 4px;
+}
+
+.exif-card {
+  margin-top: 15px;
+  background: #242424;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.close-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
